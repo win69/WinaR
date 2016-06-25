@@ -5,20 +5,19 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 <html>
-    <head>
-        <title></title>
-    </head>
     <body>
-        <h1>Salah satu yang dapat dilakukan dengan javascript
-            adalah menampilkan tanggal dan waktu.</h1>
-        <h2>Dalam hal ini coba perhatikan perubahan yang terjadi ketika
-        tombol ditekan beberapa kali...</h2>
+        <h1>Javascript...</h1>
+        <p id="demo">this is what the javascript do!</p>
+        <button type="button" onclick="myFunction()">Click Me</button> 
         
-        <button type ="button"
-            onclick ="document.getElementById('demo').innerHTML =Date()">
-            Click Me!</button>
-        
-        <p id="demo"></p>
-        </button>
+        <script>
+            function myFunction(){
+                var x =document.getElementById("demo");
+                x.style.fontsize ="50px";
+                x.style.color ="orange";
+                
+            }
+        </script>
+            
     </body>
 </html>
